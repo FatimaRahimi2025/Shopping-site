@@ -1,6 +1,6 @@
 import { SignJWT, jwtVerify } from "jose";
-const key = new TextDecoder().encode("this is the secret key");
-export const encryptJWt = async (payLoad) => {
+const key = new TextEncoder().encode("this is the secret key");
+export const encryptJWT = async (payLoad) => {
     return new SignJWT(payLoad)
     .setProtectedHeader({alg: "Hs256"})
     .setIssuedAt()
