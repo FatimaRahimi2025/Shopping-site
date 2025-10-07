@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { getCookie } from '../utils/helpers/Cookie';
 
- const Providers = () => {
-  return (
-    <div>Providers</div>
-  )
+const Authorize = () => {
+     useEffect(() => {
+        const readCookie = async () => {
+            const result = await getCookie("credential");
+            console.log(result);
+        };
+        readCookie();
+
+     }, []);
+}
+ const Providers = ({ children }) => {
+  return <Authorize>{children}</Authorize>
 }
 export default Providers;
