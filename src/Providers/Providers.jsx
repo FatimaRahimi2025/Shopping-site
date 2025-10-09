@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import { getCookie, setCookie } from '../utils/helpers/Cookie';
 
 const Authorize = () => {
@@ -10,8 +10,8 @@ const Authorize = () => {
         readCookie();
 
      }, []);
-}
+};
  const Providers = ({ children }) => {
   return <Authorize>{children}</Authorize>
-}
+};
 export default Providers;
