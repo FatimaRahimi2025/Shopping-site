@@ -17,5 +17,5 @@ export const decryptJWT = async (session) => {
     return payload;
     } catch (error){
         return null;
-    }
+    };
 };
