@@ -1,11 +1,15 @@
 import React, { useEffect } from 'react'
-import { getCookie } from '../utils/helpers/Cookie';
+import { getCookie, setCookie } from '../utils/helpers/Cookie';
 
 const Authorize = () => {
      useEffect(() => {
         const readCookie = async () => {
-            const result = await getCookie("credential");
-            console.log(result);
+          setCookie("credential", {
+            access_token: "aslkdjasldkjasjklc",
+            refresh_token: "alsdjaslkdjalskdm6s54ds",
+          })
+            // const result = await getCookie("credential");
+            // console.log(result);
         };
         readCookie();
 
