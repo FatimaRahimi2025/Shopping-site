@@ -1,9 +1,14 @@
 import React, { useEffect } from 'react';
-import { getCookie } from './utils/helpers/Cookie';
+import { useStore } from 'zustand';
 
 function App() {
+  const { access_token} = useStore();
+
   return (
-    <div className=''>App</div>
+    <div className=''>
+   
+      access_token
+    </div>
   )
 };
 
