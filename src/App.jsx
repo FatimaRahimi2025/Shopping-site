@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useStore } from 'zustand';
+import {useStore } from './Store';
 
 function App() {
   const { access_token} = useStore();

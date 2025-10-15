@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { getCookie, setCookie } from '../utils/helpers/Cookie';
+import { useStore } from '../Store/index';
 
 const Authorize = ({ children}) => {
+  const { useState } = useStore();
      useEffect(() => {
         const readCookie = async () => {
             const result = await getCookie("credential");
