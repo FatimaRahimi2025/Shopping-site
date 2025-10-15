@@ -6,6 +6,7 @@ const Authorize = ({ children}) => {
   const { setState } = useStore();
      useEffect(() => {
         const readCookie = async () => {
+          // await setCookie("credential", {access_token:"assdddfffqsadd", refresh_token: "askjjkkfkkffjfjfkj"} )
             const result = await getCookie("credential");
             setState(result);
             console.log(result);
