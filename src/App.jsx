@@ -7,7 +7,7 @@ function App() {
   return (
     <div className=''>
    
-      access_token
+      access_token: {access_token ? access_token: "no access token is set!"}
     </div>
   )
 };

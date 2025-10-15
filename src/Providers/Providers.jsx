@@ -3,10 +3,11 @@ import { getCookie, setCookie } from '../utils/helpers/Cookie';
 import { useStore } from '../Store/index';
 
 const Authorize = ({ children}) => {
-  const { useState } = useStore();
+  const { setState } = useStore();
      useEffect(() => {
         const readCookie = async () => {
             const result = await getCookie("credential");
+            setState(result);
             console.log(result);
         };
         readCookie();
