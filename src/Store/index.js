@@ -6,7 +6,7 @@ export const useStore = create((set) => ({
     setState: (data) => 
         set({
             access_token: data?.access_token,
-            access_refresh: data?.access_refresh,
+            refresh_token: data?.refresh_token,
         }),
         removeState: () => set({ access_token: null, access_refresh: null }),
 }));

@@ -15,6 +15,7 @@ const Authorize = ({ children}) => {
         readCookie();
 
      }, []);
+
      return <>{ children }</>
 };
 
