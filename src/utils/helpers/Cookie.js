@@ -6,3 +6,5 @@ export const setCookie = async (key, data) =>
 
 export const getCookie = async (key) => await decryptJWT(Cookies.get(key));
 export const removeCookie = async (key) => Cookies.remove(key);
+
+
