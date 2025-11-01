@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { getCookie, setCookie } from '../utils/helpers/Cookie';
 import { useStore } from '../Store/index';
 
+
 const Authorize = ({ children}) => {
   const { setState } = useStore();
 
